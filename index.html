@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>De Shulkers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">DE SHULKERS</div>
+</nav>
+
+<header class="hero">
+  <h1>De Shulkers</h1>
+  <p>Short films. Stories. Minecraft.</p>
+  <a href="#films" class="hero-button">Watch now</a>
+</header>
+
+<section id="films" class="row">
+  <h2>Films</h2>
+  <div class="grid" id="filmGrid"></div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" id="close">&times;</span>
+
+    <div class="modal-hero">
+      <img id="modalImage">
+      <div class="modal-info">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <button id="playButton" class="play-main">▶ Play</button>
+      </div>
+    </div>
+
+    <video id="modalVideo" controls></video>
+    <button id="backToInfo" style="display:none;">← Terug naar info</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
